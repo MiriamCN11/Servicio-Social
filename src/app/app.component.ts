@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmailValidator } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -20,26 +21,12 @@ export class AppComponent {
 
   /**ARREGLO DE OBJETOS*/
   employees = [
-    {name: 'Nataly',
-    apellidoP: 'Castañeda',
-    apellidoM: 'Noriega',
-    edad: '22',
-    email: 'noriegam45@gmail.com',
-    telefono: '3318765385'},
-
-    {name: 'Paulina',
-    apellidoP: 'Castañeda',
-    apellidoM: 'Noriega',
-    edad: '18',
-    email: 'paulinac@gmail.com',
-    telefono: '3325964968'},
-
-    {name: 'Luis',
-    apellidoP: 'Ortega',
-    apellidoM: 'Medina',
-    edad: '25',
-    email: 'ortegali@gmail.com',
-    telefono: '3314408001'}
+    {name: Text,
+    apellidoP: Text,
+    apellidoM: Text,
+    edad: Number,
+    email: EmailValidator,
+    telefono: Number},
   ];
 
   //MODELO PARA ACTUALIZAR DATOS
